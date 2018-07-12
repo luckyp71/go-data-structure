@@ -29,12 +29,12 @@ func stringLinearSearch(data []string, key string) bool {
 
 // Linear search over list of object
 func objLinearSearch(data []Employee, key string) bool {
-	var employees []string
+	var employee_names []string
 	for _, employee := range data {
-		employees = append(employees, employee.Name)
+		employee_names = append(employee_names, employee.Name)
 	}
 
-	for _, name := range employees {
+	for _, name := range employee_names {
 		if name == key {
 			return true
 		}
